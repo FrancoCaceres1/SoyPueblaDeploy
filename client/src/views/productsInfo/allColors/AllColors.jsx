@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { editColors, getColor, deleteColor } from "../../../redux/Actions";
-import "./allColors.css";
+import "./AllColors.css";
 import { FaPencilAlt } from "react-icons/fa";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import CreateColor from "../../create/createColor/createColor";
