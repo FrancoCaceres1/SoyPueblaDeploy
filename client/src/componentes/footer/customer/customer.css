@@ -1,6 +1,7 @@
 .customer-container {
   padding: 50px;
   margin: 50px;
+  min-height: 100vh;
 }
 
 .customer-container h1 {
