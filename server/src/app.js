@@ -21,13 +21,16 @@ server.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 server.use(bodyParser.json({ limit: '50mb' }));
 server.use(cookieParser());
 server.use(morgan('dev'));
-server.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Credentials', 'true');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
-  next();
-});
+server.use(cors({
+  origin: [
+    ' * ',
+    'https://soy-puebla-deploy.vercel.app',
+    'https://soypuebladeploy-production.up.railway.app',
+    'http://localhost:5173',
+    'https://worthy-insect-17.accounts.dev/sign-up',
+    'https://worthy-insect-17.accounts.dev/sign-in'
+  ]
+}));
 
 server.use(cors());
 
