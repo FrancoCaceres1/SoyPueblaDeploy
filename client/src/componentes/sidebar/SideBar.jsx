@@ -5,7 +5,7 @@ import Modal from "@mui/material/Modal";
 import { useMediaQuery } from "@mui/material";
 import { FiSliders, FiShoppingCart, FiRotateCcw } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import "./SideBAr.css";
+import "./SideBar.css";
 
 const initialState = {
   isOpenCategory: false,
