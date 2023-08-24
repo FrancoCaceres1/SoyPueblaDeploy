@@ -25,7 +25,7 @@ export default function User() {
   if (!isSignedIn) {
     return (
       <div className="button-container">
-        <Link to="https://worthy-insect-17.accounts.dev/sign-in">
+        <Link to="https://stunning-cub-68.accounts.dev/sign-up">
           <button className="button-container-button">
             <img src={`${userIcon}`} alt="Icono de usuario por defecto" />
           </button>
