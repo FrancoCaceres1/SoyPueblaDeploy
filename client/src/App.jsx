@@ -42,7 +42,7 @@ import UsersData from './views/usersData/dataUserAdmin';
 import HistoryData from './views/dashboard/purchaseHistory/purchaseHistory';
 import AllCategories from './views/productsInfo/categories/AllCategories';
 import BannedUserPage from './views/ban/BannedUserPage';
-import GrupoDesarrollo from './views/grupo/grupoDesarrollo';
+import GrupoDesarrollo from './views/grupo/GrupoDesarrollo';
 
 axios.defaults.baseURL = 'https://soypuebladeploy-production.up.railway.app/';
 
