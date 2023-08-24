@@ -46,10 +46,19 @@
   margin-bottom: 0;
 }
 
+.delete-button {
+  margin-left: auto;
+}
+
+.delete-button:hover {
+  background-color: rgba(60, 185, 154, 0.798);
+  color: white;
+}
+
 @media (max-width: 768px) {
   .customer-container {
-    padding: 20px;
-    margin: 20px; 
+    padding: 50px;
+    margin: 50px;
   }
 
   .customer-container h1 {
@@ -71,12 +80,4 @@
   .accordion {
     margin: 10px 0;
   }
-}
-
-.delete-button {
-  margin-left: auto;
-}
-.delete-button:hover {
-  background-color: rgba(60, 185, 154, 0.798);
-  color: white;
 }

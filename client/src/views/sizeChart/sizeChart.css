@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin-top: 2rem;
 }
+
 .sizeChartP {
   text-align: justify;
   color: rgb(81, 81, 81);
