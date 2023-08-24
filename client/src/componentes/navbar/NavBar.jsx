@@ -314,6 +314,7 @@ export default function NavBar({ links }) {
                     <SearchBar
                       handlerEventSearch={handlerEventSearch}
                       handlerSubmitSearch={handlerSubmitSearch}
+                      handleOnFocus={handleOnFocus}
                     />
                     <IconButton
                       style={{
