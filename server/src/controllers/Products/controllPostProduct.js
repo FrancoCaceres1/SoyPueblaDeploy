@@ -3,7 +3,9 @@ const { Products, Colors, Sizes, Categories, Series, Stocks, ColorImages } = req
 const controllPostProduct = async (req) => {
   const { name, price, sale, description, series, category, colorImage } = req.body;
 
-  const newProduct = await Products.create({ name, price, sale, description });
+  const [ newProduct, created ] = await Products.findOrCreate({where: { name}, defaults: { price, sale, description }});
+
+  if(!created)throw Error("Este producto ya fue creado anteriormente");
 
   const findedCategories  = await Categories.findAll({where: { name : category }} );
   await newProduct.setCategories(findedCategories); 

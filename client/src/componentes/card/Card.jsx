@@ -452,6 +452,7 @@ export default function Cardx({ product }) {
                       fontSize: "1rem",
                       fontWeight: "600",
                       cursor: "pointer",
+                      marginBottom: isMatchCard ? "0.7rem" : "0",
                     }}
                   >
                     {name}
