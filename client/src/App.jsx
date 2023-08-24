@@ -44,7 +44,7 @@ import AllCategories from './views/productsInfo/categories/AllCategories';
 import BannedUserPage from './views/ban/BannedUserPage';
 import GrupoDesarrollo from './views/grupo/grupoDesarrollo';
 
-axios.defaults.baseURL = 'http://localhost:3001/';
+axios.defaults.baseURL = 'https://soypuebladeploy-production.up.railway.app/';
 
 function App() {
   const { pathname } = useLocation();

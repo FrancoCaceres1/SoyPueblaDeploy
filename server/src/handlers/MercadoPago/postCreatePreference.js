@@ -13,9 +13,9 @@ const postCreatePreference = async (req, res) => {
   const preference = {
     items: items,
     back_urls: {
-      success: "http://localhost:3001/mp/success",
-      failure: "http://localhost:3001/mp/failure",
-      pending: "http://localhost:3001/mp/pending",
+      success: "https://soypuebladeploy-production.up.railway.app/mp/success",
+      failure: "https://soypuebladeploy-production.up.railway.app/mp/failure",
+      pending: "https://soypuebladeploy-production.up.railway.app/mp/pending",
     },
     auto_return: "approved",
   };

@@ -5,7 +5,7 @@ const getFailure = async (req, res) => {
     res
       .status(200)
       .redirect(
-        `http://localhost:5173/pay-state/?data=${encodeURIComponent(infoJSON)}`
+        `https://soy-puebla-deploy.vercel.app/pay-state/?data=${encodeURIComponent(infoJSON)}`
       );
   } catch (error) {
     res.status(500).json({ error: message.error });

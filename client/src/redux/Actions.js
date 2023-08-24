@@ -220,7 +220,7 @@ export function postUsers(userClerkId, user, fullName) {
 export function addToCar(userId, stockId, quantity) {
   return async function (dispatch) {
     try {
-      const response = await axios.post(`http://localhost:3001/cart`, {
+      const response = await axios.post(`https://soypuebladeploy-production.up.railway.app/cart`, {
         userId,
         stockId,
         quantity,
@@ -237,7 +237,7 @@ export function addToCar(userId, stockId, quantity) {
 export const getUserCart = (userId) => {
   return async (dispatch) => {
     try {
-      const response = await fetch(`http://localhost:3001/cart/${userId}`);
+      const response = await fetch(`https://soypuebladeploy-production.up.railway.app/cart/${userId}`);
       const data = await response.json();
       dispatch({ type: GET_USER_CART, payload: data });
     } catch (error) {
@@ -266,7 +266,7 @@ export function sendMail(data) {
 export function deleteCart(id) {
   return async function (dispatch) {
     try {
-      const response = await axios.delete(`http://localhost:3001/cart/${id}`);
+      const response = await axios.delete(`https://soypuebladeploy-production.up.railway.app/cart/${id}`);
       dispatch({
         type: DELETE_CART,
         payload: response.data,
@@ -281,7 +281,7 @@ export function deleteCartUser(id, sale) {
   return async function (dispatch) {
     try {
       const response = await axios.delete(
-        `http://localhost:3001/cart/user?id=${id}&&sale=${sale}`
+        `https://soypuebladeploy-production.up.railway.app/cart/user?id=${id}&&sale=${sale}`
       );
       dispatch({
         type: DELETE_CART_USER,
@@ -310,7 +310,7 @@ export function addHistory(userId, state) {
 export function addToFavorites(userId, productId) {
   return async function (dispatch) {
     try {
-      await axios.post(`http://localhost:3001/cart/fav/`, {
+      await axios.post(`https://soypuebladeploy-production.up.railway.app/cart/fav/`, {
         userId: userId,
         productId: productId,
       });
@@ -327,7 +327,7 @@ export function addToFavorites(userId, productId) {
 export function getAllFav(userId) {
   return async function (dispatch) {
     try {
-      const response = await axios(`http://localhost:3001/cart/fav/${userId}`);
+      const response = await axios(`https://soypuebladeploy-production.up.railway.app/cart/fav/${userId}`);
       dispatch({
         type: GET_ALL_FAV,
         payload: response.data,
@@ -341,7 +341,7 @@ export function getAllFav(userId) {
 export function removeFromFavorites(userId, productId) {
   return async function (dispatch) {
     try {
-      const response = await axios.delete(`http://localhost:3001/cart/fav/`, {
+      const response = await axios.delete(`https://soypuebladeploy-production.up.railway.app/cart/fav/`, {
         data: {
           userId,
           productId,

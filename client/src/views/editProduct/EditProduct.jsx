@@ -208,7 +208,7 @@ const EditProduct = () => {
     } else {
       try {
         setIsReady(false);
-        await axios.put(`http://localhost:3001/products/${id}`, createProduct);
+        await axios.put(`https://soypuebladeploy-production.up.railway.app/products/${id}`, createProduct);
         navigate(`/products/${id}`);
       } catch (error) {
         setIsReady(true);
