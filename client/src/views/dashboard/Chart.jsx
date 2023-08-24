@@ -239,7 +239,6 @@ export default function Chart() {
 
   return (
     <>
-      <Title>Hoy</Title>
       <ToggleButtonGroup
         color="primary"
         value={alignment}
