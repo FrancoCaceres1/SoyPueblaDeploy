@@ -57,10 +57,11 @@ export default function NavBar({ links }) {
     dispatch(getProductsByName(name));
     setIsModalOpen(false);
     setSearchBarVisible(false);
+    setResults(false);
   };
 
   const handleOnFocus = () => {
-    setResults(!results);
+    setResults(true);
   };
 
   useEffect(() => {
