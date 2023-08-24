@@ -356,7 +356,7 @@ export default function NavBar({ links }) {
                       marginTop: "0.2rem",
                     }}
                   >
-                    {allProducts.length > 0 &&  (
+                    {allProducts.length > 0 &&  results && (
                       <ul
                         style={{
                           display: "flex",
