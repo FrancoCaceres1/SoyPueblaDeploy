@@ -56,6 +56,7 @@ export default function NavBar({ links }) {
   const handleSelectedProduct = (name) => {
     dispatch(getProductsByName(name));
     setIsModalOpen(false);
+    setSearchBarVisible(false);
   };
 
   const handleOnFocus = () => {
