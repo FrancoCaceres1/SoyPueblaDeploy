@@ -111,10 +111,6 @@
 }
 
 @media screen and (max-width: 525px) {
-  .buttonHistory {
-    width: 48%;
-  }
-
   .history-item img {
     width: 9rem;
     height: 10rem;
